@@ -22,6 +22,7 @@ void js_coolexp_ErayLayer_finalize(JSContext *cx, JSObject *obj);
 void js_register_coolexp_ErayLayer(JSContext *cx, JS::HandleObject global);
 void register_all_coolexp(JSContext* cx, JS::HandleObject obj);
 bool js_coolexp_ErayLayer_init(JSContext *cx, uint32_t argc, jsval *vp);
+bool js_coolexp_ErayLayer_setDelegate(JSContext *cx, uint32_t argc, jsval *vp);
 bool js_coolexp_ErayLayer_create(JSContext *cx, uint32_t argc, jsval *vp);
 bool js_coolexp_ErayLayer_ErayLayer(JSContext *cx, uint32_t argc, jsval *vp);
 

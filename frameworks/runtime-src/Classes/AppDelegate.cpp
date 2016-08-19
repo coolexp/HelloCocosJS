@@ -44,6 +44,7 @@
 #endif
 
 #include "custom/scripting/auto/jsb_coolexp_auto.hpp"
+#include "custom/scripting/jsb_coolexp_manual.hpp"
 
 USING_NS_CC;
 using namespace CocosDenshion;
@@ -154,7 +155,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 #endif
 
 	sc->addRegisterCallback(register_all_coolexp);
-
+	sc->addRegisterCallback(register_all_coolexp_manual);
     sc->start();
     sc->runScript("script/jsb_boot.js");
 #if defined(COCOS2D_DEBUG) && (COCOS2D_DEBUG > 0)

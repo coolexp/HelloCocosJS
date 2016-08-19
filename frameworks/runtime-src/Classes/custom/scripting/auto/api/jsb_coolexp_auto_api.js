@@ -34,6 +34,16 @@ init : function (
 },
 
 /**
+ * @method setDelegate
+ * @param {ErayDelegate} arg0
+ */
+setDelegate : function (
+eraydelegate 
+)
+{
+},
+
+/**
  * @method create
  * @return {ErayLayer}
  */

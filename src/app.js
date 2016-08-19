@@ -39,10 +39,23 @@ var HelloWorldLayer = cc.Layer.extend({
             });
             this.addChild(sp);
         }
-        ErayUIHelper.log("from JS",this);
+        //ErayUIHelper.log("from JS",this);
+		var erayLayer = ErayLayer.create();
+		this.addChild(erayLayer);
+		erayLayer.setJSDelegate({
+			"onClick":function(value){
+				cc.log("onClick:%s",value);
+			}
+		});
         return true;
     }
 });
+var Config = Config || {};
+
+Config.addNumberHints = function(numberAdded)
+{
+    cc.log("From javascript: " + numberAdded);
+};
 
 var HelloWorldScene = cc.Scene.extend({
     onEnter:function () {

@@ -179,6 +179,7 @@ copy "$(ProjectDir)..\..\..\project.json" "$(OutDir)\" /Y</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\custom\scripting\auto\jsb_coolexp_auto.cpp" />
+    <ClCompile Include="..\Classes\custom\scripting\jsb_coolexp_manual.cpp" />
     <ClCompile Include="..\Classes\ErayLayer.cpp" />
     <ClCompile Include="..\Classes\ErayUIHelper.cpp" />
     <ClCompile Include="main.cpp" />
@@ -186,6 +187,7 @@ copy "$(ProjectDir)..\..\..\project.json" "$(OutDir)\" /Y</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\custom\scripting\auto\jsb_coolexp_auto.hpp" />
+    <ClInclude Include="..\Classes\custom\scripting\jsb_coolexp_manual.hpp" />
     <ClInclude Include="..\Classes\Eray.h" />
     <ClInclude Include="..\Classes\ErayLayer.h" />
     <ClInclude Include="..\Classes\ErayUIHelper.h" />
