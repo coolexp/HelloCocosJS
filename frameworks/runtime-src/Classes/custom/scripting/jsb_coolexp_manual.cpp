@@ -46,7 +46,7 @@ public:
 		jsval arg1 = INT_TO_JSVAL(1001);
 
 		JS_GetProperty(context, object, "Config", &owner);
-		ScriptingCore::getInstance()->executeFunctionWithOwner(owner, "addNumberHints", 1, &arg1);
+		ScriptingCore::getInstance()->executeFunctionWithOwner(owner, "sendNumber", 1, &arg1);
 	}
 	void setJSDelegate(JS::HandleValue pJSDelegate)
 	{

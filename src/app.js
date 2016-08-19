@@ -52,9 +52,9 @@ var HelloWorldLayer = cc.Layer.extend({
 });
 var Config = Config || {};
 
-Config.addNumberHints = function(numberAdded)
+Config.sendNumber = function(num)
 {
-    cc.log("From javascript: " + numberAdded);
+    cc.log("From javascript: " + num);
 };
 
 var HelloWorldScene = cc.Scene.extend({
